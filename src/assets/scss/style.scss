@@ -1,0 +1,48 @@
+@import "./themes";
+
+/* POSITIONS */
+
+.pos-rel {
+	position: relative !important;
+}
+
+/* TEXT */
+.bold {
+	font-weight: bold !important;
+}
+.ws-normal {
+	white-space: normal;
+}
+
+/* SIZES */
+.w-100 {
+	width: 100%;
+}
+
+/* COLOR */
+.bg-trans {
+	background-color: transparent !important;
+}
+
+/* ANCHOR */
+a {
+	text-decoration: none;
+}
+
+/* FLEX */
+.ai-start {
+	align-items: flex-start !important;
+}
+
+/* BOX */
+.shadow {
+	box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07) !important;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.line-through {
+	text-decoration: line-through;
+}

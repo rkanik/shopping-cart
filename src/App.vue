@@ -1,32 +1,25 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+	<PreLoader v-if="$loading" />
+	<router-view v-else />
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import { mapActions, mapGetters } from 'vuex'
+import PreLoader from '@/components/PreLoader'
+export default {
+	name: 'App',
+	components: {
+		PreLoader
+	},
+	created() {
+		this.ensureAuth()
+	},
+	computed: {
+		...mapGetters('Auth', ['$loading'])
+	},
+	methods: {
+		...mapActions('Auth', ['ensureAuth'])
+	}
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+};
+</script>

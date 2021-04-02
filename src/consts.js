@@ -1,0 +1,16 @@
+export const USERS = 'sc-users'
+export const VUEX_KEY = 'sc-vuex'
+
+// Messages
+export const INVALID_EMAIL = 'Invalid Email Address. Please provide a valid email address.'
+export const NO_EMAIL_PASS = 'Please provide valid email and password.'
+export const INVALID_EMAIL_PASS = 'Invalid Email Address or Password.'
+export const INVALID_PASS = 'Password must be atleast 8 characters and must contain at least one uppercase, one lowercase and a number.'
+export const UNSUPPORTED_PROVIDER = 'Provider not supported.'
+export const LOGIN_FAILED = 'Unable to Signin for now. Please try again later'
+export const SIGNUP_FAILED = 'Unable to Signup for now. Please try again later'
+export const SIGNIN_SUCCESS = 'Signed In Successfully!'
+export const INVALID_NAME = 'Invalid Name. Name must not have number and special characters.'
+export const PASS_NOT_MATCH = 'Password doesn\'t match!'
+export const EMPTY_FIELD = 'All of the field is required. Please up the form correctly and add atleast one tag.'
+export const SIGNIN_FIRST = 'You are not Signed In. Please Signin First.'

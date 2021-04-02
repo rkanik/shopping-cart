@@ -1,0 +1,58 @@
+.v-application,
+.v-application.theme--light {
+   --bg-primary: #EEEEF5;
+   --bg-secondary: white;
+   --bg-secondary2: white;
+   --txt-primary: #4B4B4B;
+   --txt-secondary: #C7CFD9;
+   --txt-disabled: #3d4045;
+   --divider: #dadce0;
+   --border: #303338;
+   --shadow: #1f2227;
+   --accent: #009688;
+}
+
+.v-application.theme--dark {
+   --bg-primary: #22252a;
+   --bg-secondary: #2d3035;
+   --bg-secondary2: rgb(40, 43, 48); // rgb(39, 42, 47);
+   --txt-primary: #dadcdb;
+   --txt-secondary: #727377;
+   --txt-disabled: #3f4247;
+   --divider: #36393f;
+   --border: #36393f;
+   --shadow: #1f2227;
+   --accent:#4db6ac;
+}
+
+.bg-pri {
+   background-color: var(--bg-primary) !important;
+}
+
+.bg-sec {
+   background-color: var(--bg-secondary) !important;
+}
+
+.bg-sec2 {
+   background-color: var(--bg-secondary2) !important;
+}
+
+.bg-accent {
+   background-color: var(--accent) !important;
+}
+
+.txt-pri {
+   color: var(--txt-primary) !important;
+}
+
+.txt-sec {
+   color: var(--txt-secondary) !important;
+}
+
+.txt-acnt {
+   color: var(--accent) !important;
+}
+
+.brdr-divider {
+   border-color: var(--divider) !important;
+}
